@@ -37,6 +37,7 @@ function reset() {
 //新增套票
 function addTicketData(e) {
     // console.log(data);
+    isEmpty = false;
     e.preventDefault();
 
     //空值判斷，若空顯示紅框，秀出未填寫項目
@@ -49,7 +50,7 @@ function addTicketData(e) {
         }
     })
     //若有空值中斷執行
-    if (isEmpty === true) return;
+    if (isEmpty) return;
 
     //資料寫入
     let newData = {};

@@ -55,7 +55,7 @@ function addTicketData(e) {
     //資料寫入
     let newData = {};
     newData.id = data.length;
-    newData.name = ticketName.value;
+    newData.name axi ticketName.value;
     newData.imgUrl = imgUrl.value;
     newData.area = area.value;
     newData.description = description.value;
